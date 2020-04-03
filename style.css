@@ -1,0 +1,383 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Header style start here*/
+header {
+    height: 95vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    position: relative;
+}
+
+header .nav-link {
+    margin-left: 40px;
+}
+
+header .social-nav {
+    margin: 10px 0px;
+}
+
+header .social-nav li {
+    display: inline-block;
+}
+
+header .social-nav li a {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin: 0px 20px;
+}
+
+/*Banner css code*/
+header .banner .banner-inner {
+    margin-top: 150px;
+}
+
+header .banner .banner-inner h2 {
+    color: #FFF;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+header .banner .banner-inner p {
+    color: #FFF;
+    margin-bottom: 60px;
+}
+
+header .banner .banner-inner .double-button button {
+    font-weight: 400;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-right: 10px;
+    color: #FFF;
+}
+
+header .banner .banner-inner .double-button button.btn-feature {
+    background-color: #4466c9;
+}
+
+header .banner .banner-inner .double-button button.btn-down {
+    background-color: #fc6a42;
+}
+
+.top-arrow {
+    font-size: 1rem;
+    color: #fc6a42;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 40px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    text-align: center;
+}
+
+/*Banner css code*/
+/*Global title css code*/
+.global-title {
+    width: 100%;
+    margin: 80px 0px;
+    text-align: center;
+}
+
+.global-title h2 {
+    color: #648cff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.global-title p {
+    color: #888;
+}
+
+/*Global title css code*/
+
+/*Feature css code*/
+#feature {
+    padding-bottom: 50px;
+}
+
+#feature .feature-inner {
+    overflow: hidden;
+}
+
+#feature .feature-inner .feature-img {
+    float: left;
+    width: 20%;
+}
+
+#feature .feature-inner .feature-img img {
+    width: 100%;
+}
+
+#feature .feature-inner .feature-text {
+    float: left;
+    width: 75%;
+    margin-left: 5%;
+}
+
+#feature .feature-inner .feature-text p {
+    color: #aaa;
+}
+
+/*Feature css code*/
+
+/*Widget css code*/
+.widget-inner {
+    position: relative;
+    height: 650px;
+    margin-bottom: 90px;
+}
+
+.widget-inner .widget01,
+.widget-inner .widget02,
+.widget-inner .widget03 {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    margin: auto;
+    width: 30%;
+    height: auto;
+    box-shadow: 0px 25px 25px #d0d0d0;
+}
+
+.widget-inner .widget02 {
+    z-index: 3;
+}
+
+.widget-inner .widget01 {
+    z-index: 1;
+    right: 450px;
+    height: 565px;
+}
+
+.widget-inner .widget03 {
+    z-index: 2;
+    left: 500px;
+    height: 565px;
+}
+
+.widget-inner .prev-nav {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    margin: auto;
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    color: #aaa;
+}
+
+.widget-inner .next-nav {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: auto;
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    color: #aaa;
+}
+
+/*Widget css code*/
+
+/*ScreenShot css code*/
+#screenshot {
+    padding-bottom: 50px;
+}
+
+#screenshot .screen-inner {
+    margin: 50px 0px;
+}
+
+#screenshot .screen-inner .img-box {
+    width: 100%;
+    text-align: right;
+}
+
+#screenshot .sunny .img-box {
+    width: 100%;
+    text-align: left;
+}
+
+#screenshot .screen-inner .img-box img {
+    width: 70%;
+    margin-right: 50px;
+}
+
+#screenshot .screen-inner .inner-text {
+    margin-top: 90px;
+}
+
+#screenshot .screen-inner .inner-text h4 {
+    font-size: 2.5rem;
+    color: #648cff;
+    text-transform: uppercase;
+    margin: 30px 0px;
+}
+
+#screenshot .screen-inner .inner-text p {
+    font-size: 1.2rem;
+}
+
+#screenshot .screen-inner .inner-text .temp-circle span {
+    color: #aaa;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+    width: 60px;
+    display: inline-block;
+    height: 60px;
+    line-height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #CCC;
+    margin-left: -20px;
+    background-color: #FFF;
+    position: absolute;
+}
+
+#screenshot .screen-inner .inner-text .temp-circle span:nth-child(1) {
+    z-index: 3;
+}
+
+#screenshot .screen-inner .inner-text .temp-circle span:nth-child(2) {
+    z-index: 2;
+    left: 65px;
+}
+
+#screenshot .screen-inner .inner-text .temp-circle span:nth-child(3) {
+    z-index: 1;
+    left: 110px;
+}
+
+/*ScreenShot css code*/
+
+/*Reviews css code*/
+#reviews {
+    padding-bottom: 50px;
+}
+
+#reviews .review-inner {
+    margin-bottom: 40px;
+}
+
+#reviews .review-inner img {
+    margin: 20px 0px;
+}
+
+#reviews .review-inner .qoute {
+    color: #444444;
+    font-size: 1.4rem;
+}
+
+#reviews .review-inner .client-name {
+    color: #444444;
+    font-size: 1rem;
+}
+
+/*Reviews css code*/
+
+/*Download css code*/
+#download {
+    padding: 75px 0px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.download-inner {
+    width: 100%;
+    text-align: left;
+}
+
+.download-inner h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.download-inner p {
+    color: #ffffff;
+}
+
+.download-btn {
+    margin-top: 3;
+}
+
+/*Download css code*/
+
+/*Footer css code*/
+footer {
+    background-color: #353854;
+    position: relative;
+}
+
+footer nav {
+    padding: 50px 0px !important;
+    border-bottom: 1px solid #888;
+}
+
+footer .nav-link {
+    margin-left: 40px;
+}
+
+footer .social-nav {
+    margin: 10px 0px;
+}
+
+footer .social-nav li {
+    display: inline-block;
+}
+
+footer .social-nav li a {
+    color: #ffffff;
+    font-size: 1.2rem;
+    margin: 0px 20px;
+}
+
+.copy-text p {
+    text-align: right;
+    padding: 30px 0px;
+    color: #aaa;
+}
+
+.ft-arrow {
+    position: absolute;
+    bottom: 0px;
+    right: 50px;
+    font-size: 1.4rem;
+    background-color: #434769;
+    border-radius: 5px 5px 0px 0px;
+    padding: 5px;
+    width: 40px;
+    display: block;
+    color: #aaa;
+    text-align: center;
+}
+
+/*Footer css code*/

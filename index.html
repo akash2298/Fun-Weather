@@ -8,8 +8,11 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Swiper Slider CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <!-- Fontawesome CSS -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="style.css">
     <title>Fun Weather</title>
 </head>
@@ -156,24 +159,22 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="widget-inner">
-                        <div class="widget01">
-                            <img src="images/widget02.jpg" alt="">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="images/widget02.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/widget01.jpg" alt="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="images/widget03.jpg" alt="">
+                            </div>
                         </div>
-                        <div class="widget02">
-                            <img src="images/widget01.jpg" alt="">
-                        </div>
-                        <div class="widget03">
-                            <img src="images/widget03.jpg" alt="">
-                        </div>
-                        <!--Slider Navigation-->
-                            <a href="#" class="next-nav">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-                            <a href="#" class="prev-nav">
-                                <i class="fa fa-angle-left"></i>
-                            </a>
-                        <!--Slider Navigation-->
+
+                        <!-- Add Arrows -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
                     </div>
                 </div>
             </div>
@@ -419,6 +420,19 @@
     <script src="js/jquery-3.4.1.min.js.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
 </body>
 
 </html>

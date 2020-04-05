@@ -144,64 +144,28 @@ header .banner .banner-inner .double-button button.btn-down {
 /*Feature css code*/
 
 /*Widget css code*/
-.widget-inner {
-    position: relative;
-    height: 650px;
-    margin-bottom: 90px;
+.swiper-container{
+    height: 800px;
+}
+.swiper-wrapper {
+    align-items: center;
 }
 
-.widget-inner .widget01,
-.widget-inner .widget02,
-.widget-inner .widget03 {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    margin: auto;
-    width: 30%;
-    height: auto;
-    box-shadow: 0px 25px 25px #d0d0d0;
-}
-
-.widget-inner .widget02 {
-    z-index: 3;
-}
-
-.widget-inner .widget01 {
-    z-index: 1;
-    right: 450px;
+.swiper-slide {
+    width: 318px;
     height: 565px;
+    text-align: center;
 }
 
-.widget-inner .widget03 {
-    z-index: 2;
-    left: 500px;
-    height: 565px;
+.swiper-slide img{
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 25px 25px #aaa;
 }
-
-.widget-inner .prev-nav {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    margin: auto;
-    font-size: 40px;
-    width: 40px;
-    height: 40px;
-    color: #aaa;
-}
-
-.widget-inner .next-nav {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    margin: auto;
-    font-size: 40px;
-    width: 40px;
-    height: 40px;
-    color: #aaa;
+.swiper-slide-active{
+    transform: scale(1.2);
+    transition: .5s;
+    z-index: 9999;
 }
 
 /*Widget css code*/
